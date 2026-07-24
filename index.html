@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="google-site-verification" content="smc6ZNu1p146GveB_4TPOdDQ9Ii33AOSWg4KnA3Cr4s" />
     <title>Gesture Controlled 3D Particles</title>
     <style>
         body { margin: 0; overflow: hidden; background-color: #050505; font-family: 'Segoe UI', sans-serif; }
@@ -68,7 +69,9 @@
         <video id="input_video"></video>
     </div>
 
-<script>
+
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=smc6ZNu1p146GveB_4TPOdDQ9Ii33AOSWg4KnA3Cr4s">
     // --- 1. CONFIGURATION & GLOBALS ---
     const PARTICLE_COUNT = 15000;
     const PARTICLE_SIZE = 0.08;
@@ -380,6 +383,13 @@
     // Start
     initThree();
     animate();
+ 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ABC123XYZ9');
+
 
 </script>
 </body>
